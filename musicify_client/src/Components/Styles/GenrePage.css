@@ -1,0 +1,162 @@
+.GenrePage {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-radius: 0;
+  overflow-y: auto;
+  background: rgb(54, 53, 53);
+  background: linear-gradient(90deg, rgb(41, 40, 40) 0%, rgb(2, 2, 2) 71%, rgb(29, 29, 29) 100%);
+  padding: 0rem 0;
+  gap: 2rem;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 900px) {
+  .GenrePage {
+    flex: 0.9;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .GenrePage {
+    flex: 1;
+    width: 100%;
+  }
+}
+.GenrePage .poster {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.GenrePage .poster .descImage {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+}
+.GenrePage .poster .descImage h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+@media screen and (max-width: 420px) {
+  .GenrePage .poster .descImage h1 {
+    font-size: 2.4rem;
+  }
+}
+.GenrePage .main_Bidy_Genre {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0.6rem 0.4rem;
+  background: rgb(24, 20, 26);
+  background: linear-gradient(225deg, rgba(24, 20, 26, 0.7540266106) 24%, rgba(0, 0, 0, 0.9192927171) 96%);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 6rem;
+  margin-top: 2rem;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .names h1 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .names a {
+  text-decoration: underline;
+  color: white;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.2rem;
+  width: 99%;
+  margin: 0 auto;
+  background: linear-gradient(75deg, rgba(47, 46, 47, 0.754) 24%, rgba(62, 61, 61, 0.919) 96%);
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper {
+  padding: 0.6rem 0.4rem;
+  padding-bottom: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper {
+    padding-bottom: 2.5rem;
+  }
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent {
+  padding: 7px 10px;
+  height: 100%;
+  max-width: 270px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(57, 64, 78, 0.79);
+  max-height: 450px;
+  padding-top: 3px;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .imG {
+  width: 100%;
+  max-height: 210px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .imG button {
+  color: black;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: translateY(300%);
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .imG button:has(.imG > img) :hover {
+  transform: translateY(0%);
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .imG img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top top;
+     object-position: top top;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .imG img:hover {
+  scale: 1.15;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .desc h1 {
+  font-size: 1.2rem;
+}
+.GenrePage .main_Bidy_Genre .recentPlaylistGenre .slidersGenre .mySwiper .listRecent .desc span {
+  font-size: 0.9rem;
+  width: 100%;
+  color: #dadada;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=GenrePage.css.map */

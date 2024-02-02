@@ -1,0 +1,104 @@
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  padding: 1rem 0.6rem;
+  width: 100vw;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.4rem;
+  @media screen and (max-width: 520px) {
+    justify-content: space-between;
+
+  }
+  .globalSongInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    @media screen and (max-width: 640px) {
+      gap: 1rem;
+    }
+    @media screen and (max-width: 320px) {
+      gap: 0.1rem;
+    }
+    img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 6px;
+
+      @media screen and (max-width: 840px) {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    .currentSongInfoDesc {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 0.4rem;
+      @media screen and (max-width: 840px) {
+        gap: 0.2rem;
+      }
+      span {
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        @media screen and (max-width: 840px) {
+          font-size: 14px;
+        }
+      }
+      #artist {
+        font-size: 14px;
+        color: #dadada;
+        font-weight: 500;
+        @media screen and (max-width: 840px) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .Icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @media screen and (max-width: 520px) {
+      gap: 1rem;
+  
+    }
+    @media screen and (max-width: 320px) {
+      gap: 0.4rem;
+  
+    }
+
+    #prevBtn {
+      color: white;
+      display: block;
+    }
+    .realIcon {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    #seekSliderId {
+      position: absolute;
+      width: 100%;
+      bottom: 80px;
+      left: 0;
+      height: 2px;
+      background-color: red;
+    }
+  }
+  @media screen and (max-width: 640px) {
+h1{
+  font-size: 0.8rem;
+}
+  }
+}

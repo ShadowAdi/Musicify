@@ -1,0 +1,502 @@
+.searchSection {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 1.3rem;
+  overflow-y: auto;
+  background: rgb(24, 20, 26);
+  background: linear-gradient(225deg, rgba(24, 20, 26, 0.7540266106) 24%, rgba(0, 0, 0, 0.9192927171) 96%);
+  padding: 1rem 1.9rem;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+@media screen and (max-width: 900px) {
+  .searchSection {
+    flex: 0.9;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .searchSection {
+    flex: 1;
+  }
+}
+.searchSection .mainSearch {
+  min-height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, minmax(250px, 1fr));
+  justify-content: space-around;
+  gap: 1rem 0.8rem;
+  padding: 1rem 0.8rem;
+}
+@media screen and (max-width: 1240px) {
+  .searchSection .mainSearch {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .searchSection .mainSearch {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 340px) {
+  .searchSection .mainSearch {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 820px) {
+  .searchSection .mainSearch {
+    grid-template-rows: repeat(4, minmax(150px, 1fr));
+  }
+}
+.searchSection .mainSearch .col {
+  width: 100%;
+  height: 100%;
+}
+.searchSection .mainSearch .col .col1Ele1 {
+  padding: 0.6rem 0.4rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: space-around;
+  transition: all 300ms ease-in-out;
+  background-color: #181818;
+}
+.searchSection .mainSearch .col .col1Ele1:hover {
+  background-color: #3d3a3a;
+}
+@media screen and (max-width: 820px) {
+  .searchSection .mainSearch .col .col1Ele1 {
+    padding: 0.4rem 0.6rem;
+    gap: 0.4rem;
+  }
+}
+.searchSection .mainSearch .col .col1Ele1 img {
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+}
+@media screen and (max-width: 820px) {
+  .searchSection .mainSearch .col .col1Ele1 img {
+    height: 50%;
+  }
+}
+.searchSection .mainSearch .col .col1Ele1 .dets {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.2rem;
+}
+.searchSection .mainSearch .col .col1Ele1 .dets h1 {
+  color: #dadada;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 30ms ease-in-out;
+}
+.searchSection .mainSearch .col .col1Ele1 .dets h1:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 1024px) {
+  .searchSection .mainSearch .col .col1Ele1 .dets h1 {
+    font-size: 14px;
+  }
+}
+.searchSection .mainSearch .col .col1Ele1 .dets h4 {
+  font-size: 16px;
+  transition: all 30ms ease-in-out;
+  color: #dadada;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+.searchSection .mainSearch .col .col1Ele1 .dets h4:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 1024px) {
+  .searchSection .mainSearch .col .col1Ele1 .dets h4 {
+    font-size: 12px;
+  }
+}
+.searchSection .mainSearch .col .col1Ele1 .dets span {
+  font-size: 16px;
+  transition: all 30ms ease-in-out;
+  color: #dadada;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+.searchSection .mainSearch .col .col1Ele1 .dets span:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 1024px) {
+  .searchSection .mainSearch .col .col1Ele1 .dets span {
+    font-size: 12px;
+  }
+}
+.searchSection .mainSearch .col .col1Ele1 .dets .releaseLabel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.searchSection .mainSearch .faltu {
+  padding: 2rem;
+  width: 100%;
+}
+.searchSection .mainSearch1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+.searchSection .mainSearch1 .headings {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #dadada;
+  padding: 1rem 0.3rem;
+  color: #dadada;
+}
+.searchSection .mainSearch1 .headings #SN {
+  flex: 0.1;
+  text-align: center;
+  width: 100%;
+}
+.searchSection .mainSearch1 .headings #Title {
+  flex: 0.4;
+}
+.searchSection .mainSearch1 .headings #Album {
+  flex: 0.4;
+}
+.searchSection .mainSearch1 .headings #Durat {
+  flex: 0.1;
+}
+.searchSection .mainSearch1 .listSongs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  padding-bottom: 7rem;
+  transition: all 600ms ease-in-out;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.4rem 0;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow:hover {
+  background-color: rgba(244, 244, 244, 0.1607843137);
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .no {
+  flex: 0.1;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .no span {
+  font-size: 18px;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .no span {
+    font-size: 14px;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns img {
+  height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: 600ms ease-in;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .titleAns img {
+    height: 50px;
+    width: 50px;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.4rem;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc {
+    gap: 0.2rem;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc span {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc span:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc span {
+    font-size: 12px;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc #SongName {
+  font-size: 18px;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc a #SongArtistName {
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .titleAns .nameDesc a #SongArtistName {
+    font-size: 12px;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .albumName {
+  flex: 0.4;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .albumName {
+    padding-left: 1rem;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .albumName span {
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .albumName span:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .albumName span {
+    font-size: 12px;
+  }
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .durationAns {
+  flex: 0.1;
+}
+.searchSection .mainSearch1 .listSongs .listSongRow .durationAns span {
+  font-size: 14px;
+}
+@media screen and (max-width: 660px) {
+  .searchSection .mainSearch1 .listSongs .listSongRow .durationAns span {
+    font-size: 10px;
+  }
+}
+.searchSection .mainSearch4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-around;
+  gap: 1rem 0.8rem;
+  padding: 0.5rem 0.8rem;
+}
+@media screen and (max-width: 1240px) {
+  .searchSection .mainSearch4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .searchSection .mainSearch4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .searchSection .mainSearch4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.searchSection .mainSearch4 .colArtists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-image: linear-gradient(to left, #0b0b0b, #161617, #1d1e20, #252629, #2c2f33, #2f3136, #313439, #34363c, #323238, #302e33, #2d2b2e, #2a272a);
+  padding: 1rem 0.3rem;
+  gap: 1rem;
+}
+@media screen and (max-width: 1240px) {
+  .searchSection .mainSearch4 .colArtists {
+    padding: 1rem 0.1rem;
+  }
+}
+.searchSection .mainSearch4 .colArtists img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+@media screen and (max-width: 1240px) {
+  .searchSection .mainSearch4 .colArtists img {
+    height: 120px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .searchSection .mainSearch4 .colArtists img {
+    height: 80px;
+    width: 80px;
+  }
+}
+.searchSection .mainSearch4 .colArtists h1 {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+  .searchSection .mainSearch4 .colArtists h1 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .searchSection .mainSearch4 .colArtists h1 {
+    font-size: 10px;
+  }
+}
+.searchSection .mainSearch3 {
+  width: 100%;
+  min-height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, minmax(250px, 1fr));
+  justify-content: space-around;
+  gap: 1rem 0.8rem;
+  padding: 1rem 0.8rem;
+}
+@media screen and (max-width: 1240px) {
+  .searchSection .mainSearch3 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 640px) {
+  .searchSection .mainSearch3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .searchSection .mainSearch3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 320px) {
+  .searchSection .mainSearch3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.searchSection .mainSearch3 a .colPlaylist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  gap: 1rem;
+  background-image: linear-gradient(to left, #0b0b0b, #161617, #1d1e20, #252629, #2c2f33, #2f3136, #313439, #34363c, #323238, #302e33, #2d2b2e, #2a272a);
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 {
+  padding: 0.6rem 0.4rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: space-around;
+  transition: all 300ms ease-in-out;
+  background-color: #181818;
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1:hover {
+  background-color: #3d3a3a;
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 img {
+  height: 150px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+}
+@media screen and (max-width: 480px) {
+  .searchSection .mainSearch3 a .colPlaylist .col1Play1 img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .searchSection .mainSearch3 a .colPlaylist .col1Play1 img {
+    height: 100px;
+  }
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 .dets {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.2rem;
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 .dets h1 {
+  color: #dadada;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 30ms ease-in-out;
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 .dets h1:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 480px) {
+  .searchSection .mainSearch3 a .colPlaylist .col1Play1 .dets h1 {
+    font-size: 14px;
+  }
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 .dets span {
+  font-size: 14px;
+  transition: all 30ms ease-in-out;
+  color: #dadada;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+.searchSection .mainSearch3 a .colPlaylist .col1Play1 .dets span:hover {
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=SearchSection.css.map */

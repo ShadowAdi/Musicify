@@ -1,0 +1,395 @@
+.PlaylistPage {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  overflow-y: auto;
+  background: #1a1919;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+  gap: 2rem;
+  padding: 0rem;
+  overflow-x: hidden;
+  padding-bottom: 6rem;
+}
+@media screen and (max-width: 900px) {
+  .PlaylistPage {
+    flex: 0.9;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .PlaylistPage {
+    flex: 1;
+    width: 100%;
+  }
+}
+.PlaylistPage .poster {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.PlaylistPage .poster .imgContainer {
+  height: 300px;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 600ms ease-in;
+  cursor: pointer;
+  -o-object-position: top;
+     object-position: top;
+}
+@media screen and (max-width: 2024px) {
+  .PlaylistPage .poster .imgContainer {
+    height: 280px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .poster .imgContainer {
+    height: 200px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .poster .imgContainer {
+    height: 200px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .PlaylistPage .poster .imgContainer {
+    height: 120px;
+    width: 90%;
+  }
+}
+.PlaylistPage .poster .imgContainer img {
+  height: 100%;
+  width: 100%;
+  transition: all 600ms ease-in;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.PlaylistPage .poster .imgContainer .chaneImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  transition: all 1200ms ease-in;
+  background-color: #1d1d1d;
+  color: white;
+}
+.PlaylistPage .poster .descImage {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+  gap: 0.6rem;
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .poster .descImage {
+    gap: 0.2rem;
+  }
+}
+.PlaylistPage .poster .descImage h1 {
+  font-size: 4rem;
+}
+@media screen and (max-width: 1568px) {
+  .PlaylistPage .poster .descImage h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .poster .descImage h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .poster .descImage h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .PlaylistPage .poster .descImage h1 {
+    font-size: 0.6rem;
+  }
+}
+.PlaylistPage .poster .descImage .artistNamesAutor {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.PlaylistPage .poster .descImage .artistNamesAutor span {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .poster .descImage .artistNamesAutor span {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .poster .descImage .artistNamesAutor span {
+    font-size: 0.6rem;
+  }
+}
+.PlaylistPage .poster .descImage span {
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .poster .descImage span {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .poster .descImage span {
+    font-size: 0.6rem;
+  }
+}
+.PlaylistPage .songLists {
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  gap: 1rem;
+}
+.PlaylistPage .songLists .plays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 2rem auto;
+}
+.PlaylistPage .songLists .plays .lovers {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0.9;
+}
+.PlaylistPage .songLists .plays .lovers #playIcon {
+  cursor: pointer;
+  transition: all 600ms ease-in;
+  color: #dadada;
+}
+.PlaylistPage .songLists .plays .lovers #playIcon:hover {
+  color: #1ed760;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .songLists .plays .lovers #playIcon {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .songLists .plays .lovers #playIcon {
+    font-size: 0.6rem;
+  }
+}
+.PlaylistPage .songLists .plays .lovers span {
+  color: #dadada;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .songLists .plays .lovers span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .PlaylistPage .songLists .plays .lovers span {
+    font-size: 10px;
+  }
+}
+.PlaylistPage .songLists .plays .lovers #heartIcon {
+  cursor: pointer;
+  color: #dadada;
+  transition: all 600ms ease-in;
+}
+.PlaylistPage .songLists .plays .lovers #heartIcon:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.PlaylistPage .songLists .follow {
+  flex: 0.1;
+}
+.PlaylistPage .songLists .follow button {
+  outline: 0;
+  border: 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .PlaylistPage .songLists .follow button {
+    font-size: 14px;
+    padding: 0.4rem 0.3rem;
+  }
+}
+.PlaylistPage .songLists .tracks {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+.PlaylistPage .songLists .tracks .headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #807b76;
+  color: #dadada;
+}
+.PlaylistPage .songLists .tracks .headings .nos {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+.PlaylistPage .songLists .tracks .headings .names {
+  flex: 0.8;
+  display: flex;
+  justify-content: start;
+}
+.PlaylistPage .songLists .tracks .headings .times {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+.PlaylistPage .songLists .tracks .songNames {
+  width: 100%;
+  padding-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  width: 100%;
+  padding-bottom: 8px;
+  transition: all 300ms ease-in;
+  color: #dadada;
+}
+.PlaylistPage .songLists .tracks .songNames:hover {
+  background-color: rgb(96, 93, 93);
+}
+.PlaylistPage .songLists .tracks .songNames .songCount {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+.PlaylistPage .songLists .tracks .songNames .songName {
+  flex: 0.8;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+  padding-right: 6rem;
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing img {
+  height: 100%;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 420px) {
+  .PlaylistPage .songLists .tracks .songNames .songName .showing img {
+    width: 40px;
+  }
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song h4 {
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song h4:hover {
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song h4 {
+    font-size: 10px;
+  }
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song .artistName {
+  color: #fff;
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song .artistName span {
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 400;
+}
+.PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song .artistName span:hover {
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .songLists .tracks .songNames .songName .showing .artist_Song .artistName span {
+    font-size: 10px;
+  }
+}
+.PlaylistPage .songLists .tracks .songNames .songName .hidden {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  position: relative;
+  gap: 1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .songLists .tracks .songNames .songName .hidden {
+    display: none;
+  }
+}
+.PlaylistPage .songLists .tracks .songNames .songDuration {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+.PlaylistPage .songLists .tracks .songNames .songDuration span {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (max-width: 720px) {
+  .PlaylistPage .songLists .tracks .songNames .songDuration span {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=PlaylistPage.css.map */

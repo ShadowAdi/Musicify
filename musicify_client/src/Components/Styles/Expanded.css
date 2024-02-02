@@ -1,0 +1,565 @@
+.expand {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: radial-gradient(circle at 10% 20%, rgb(69, 78, 78) 0%, rgb(34, 34, 34) 90%);
+  padding: 1rem 0;
+  gap: 2rem;
+  padding-top: 0;
+  overflow-x: hidden;
+}
+.expand .main_Bidy {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 5rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.expand .main_Bidy .recentPlaylist {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.expand .main_Bidy .recentPlaylist .names {
+  padding: 2px;
+}
+.expand .main_Bidy .recentPlaylist .names span {
+  font-size: 26px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 2px;
+  transition: all 90ms ease-in-out;
+  color: #a9a6a6;
+  margin: 0;
+  text-transform: capitalize;
+}
+.expand .main_Bidy .recentPlaylist .names span:hover {
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 20px 16px 10px rgba(0, 0, 0, 0.5);
+}
+.expand .main_Bidy .recentPlaylist .names span:hover + span {
+  font-weight: 600;
+  color: #f3f1f1;
+  text-shadow: 16px 12px 10px rgba(35, 35, 35, 0.5);
+}
+.expand .main_Bidy .recentPlaylist .names span:hover + span + span {
+  font-weight: 400;
+  color: #ececec;
+  text-shadow: 12px 8px 10px rgba(64, 64, 64, 0.5);
+}
+.expand .main_Bidy .recentPlaylist .names span:has(+ span:hover) {
+  font-weight: 600;
+  color: #f3f1f1;
+  text-shadow: 16px 12px 10px rgba(35, 35, 35, 0.5);
+}
+.expand .main_Bidy .recentPlaylist .names span:has(+ span + span:hover) {
+  font-weight: 400;
+  color: #ececec;
+  text-shadow: 12px 8px 10px rgba(64, 64, 64, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .expand .main_Bidy .recentPlaylist .names span {
+    font-size: 20px;
+  }
+}
+.expand .main_Bidy .recentPlaylist .names a {
+  text-decoration: underline;
+  color: white;
+}
+.expand .main_Bidy .recentPlaylist .sliders {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.2rem;
+  width: 100%;
+  background: linear-gradient(225deg, rgba(61, 57, 62, 0.754) 24%, rgba(40, 38, 38, 0.919) 96%);
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper {
+  flex: 1;
+  padding: 0.4rem 0.4rem;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .expand .main_Bidy .recentPlaylist .sliders .mySwiper {
+    padding-bottom: 2rem;
+  }
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .ArtistRecent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(57, 64, 78, 0.79);
+  border-radius: 5px;
+  padding: 0.2rem 0.6rem;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .ArtistRecent img {
+  max-height: 140px;
+  width: 180px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .ArtistRecent h1 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent {
+  padding: 6px 6px;
+  height: 100%;
+  max-width: 270px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-radius: 2px;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(57, 64, 78, 0.79);
+  max-height: 450px;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .imG {
+  width: 100%;
+  max-height: 210px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .imG button {
+  color: black;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: translateY(300%);
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .imG button:has(.imG > img) :hover {
+  transform: translateY(0%);
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .imG img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top top;
+     object-position: top top;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .imG img:hover {
+  scale: 1.05;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .desc h1 {
+  font-size: 1.1rem;
+}
+.expand .main_Bidy .recentPlaylist .sliders .mySwiper .listRecent .desc span {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  width: 100%;
+  color: #dadada;
+  letter-spacing: 1px;
+}
+.expand .main_Bidy .recentPlaylist .sliders .loaderDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 280px;
+}
+.expand .main_Bidy .recentPlaylist #artistSlider {
+  width: -moz-max-content;
+  width: max-content;
+}
+.expand .main_Bidy .recentPlaylistArtist {
+  color: white;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.expand .main_Bidy .recentPlaylistArtist .names {
+  display: flex;
+  align-items: center;
+}
+.expand .main_Bidy .recentPlaylistArtist .names span {
+  font-size: 26px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 2px;
+  transition: all 90ms ease-in-out;
+  color: #a9a6a6;
+  margin: 0;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+.expand .main_Bidy .recentPlaylistArtist .names span:nth-child(1) {
+  text-transform: uppercase;
+}
+.expand .main_Bidy .recentPlaylistArtist .names span:hover {
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 20px 16px 10px rgba(0, 0, 0, 0.5);
+}
+.expand .main_Bidy .recentPlaylistArtist .names span:hover + span {
+  font-weight: 600;
+  color: #f3f1f1;
+  text-shadow: 16px 12px 10px rgba(35, 35, 35, 0.5);
+}
+.expand .main_Bidy .recentPlaylistArtist .names span:hover + span + span {
+  font-weight: 400;
+  color: #ececec;
+  text-shadow: 12px 8px 10px rgba(64, 64, 64, 0.5);
+}
+.expand .main_Bidy .recentPlaylistArtist .names span:has(+ span:hover) {
+  font-weight: 600;
+  color: #f3f1f1;
+  text-shadow: 16px 12px 10px rgba(35, 35, 35, 0.5);
+}
+.expand .main_Bidy .recentPlaylistArtist .names span:has(+ span + span:hover) {
+  font-weight: 400;
+  color: #ececec;
+  text-shadow: 12px 8px 10px rgba(64, 64, 64, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .expand .main_Bidy .recentPlaylistArtist .names span {
+    font-size: 20px;
+  }
+}
+.expand .main_Bidy .recentPlaylistArtist .names a {
+  text-decoration: underline;
+  color: white;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.4rem;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0 1rem;
+  background: linear-gradient(225deg, rgba(61, 57, 62, 0.754) 24%, rgba(40, 38, 38, 0.919) 96%);
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll {
+  flex: 1;
+  padding: 0.6rem 0.2rem;
+  gap: 0.9rem;
+  max-width: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .expand .main_Bidy .recentPlaylistArtist .sliders .ListAll {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .expand .main_Bidy .recentPlaylistArtist .sliders .ListAll {
+    gap: 4rem;
+  }
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .ArtistRecent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(57, 64, 78, 0.79);
+  border-radius: 5%;
+  padding: 0.3rem 0.6rem;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .ArtistRecent .circleImageWrapper {
+  height: 180px;
+  width: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .ArtistRecent .circleImageWrapper img {
+  transition: all 300ms ease-in;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .ArtistRecent .circleImageWrapper img:hover {
+  scale: 1.08;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .ArtistRecent h1 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent {
+  padding: 13px 10px;
+  height: 100%;
+  max-width: 270px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5%;
+  backdrop-filter: blur(9px) saturate(200%);
+  -webkit-backdrop-filter: blur(9px) saturate(200%);
+  background-color: rgba(57, 64, 78, 0.79);
+  max-height: 450px;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .imG {
+  width: 100%;
+  max-height: 210px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .imG button {
+  color: black;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: translateY(300%);
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .imG button:has(.imG > img) :hover {
+  transform: translateY(0%);
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .imG img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top top;
+     object-position: top top;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .imG img:hover {
+  scale: 1.05;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .desc h1 {
+  font-size: 1.2rem;
+}
+.expand .main_Bidy .recentPlaylistArtist .sliders .ListAll .listRecent .desc span {
+  font-size: 0.8rem;
+  width: 100%;
+  color: #dadada;
+  letter-spacing: 1px;
+}
+.expand .main_Bidy .recentPlaylistArtist #artistSlider {
+  width: -moz-max-content;
+  width: max-content;
+}
+@media screen and (max-width: 900px) {
+  .expand {
+    flex: 0.9;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .expand {
+    flex: 1;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  position: sticky;
+  width: 100%;
+  right: 0;
+  z-index: 100;
+  top: 0;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.header a h1 {
+  font-size: 28px;
+  cursor: pointer;
+}
+.header .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .userInfo .userInfoHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  transition: all 700ms ease-in;
+  overflow: hidden;
+}
+.header .userInfo .userInfoHeader .userFill {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #1d1d1d;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  transform: translateY(200%);
+}
+.header .userInfo .userInfoHeader a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+.header .userInfo .userInfoHeader a span {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header .userInfo .userInfoHeader a #icon {
+  transition: all 800ms ease-in-out;
+}
+.header .userInfo .userInfoHeader a #icon:hover {
+  transform: scale(1.1);
+}
+.header .userInfo .logOut button {
+  padding: 0.6rem 1.2rem;
+  color: white;
+  background: rgb(34, 10, 46);
+  background: radial-gradient(circle at 10% 20%, rgb(85, 97, 97) 0%, rgb(0, 0, 0) 90%);
+  font-size: 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+.header .userInfo .logOut #threeLines {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+  }
+  .header a h1 {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .header .userInfo {
+    gap: 1rem;
+  }
+  .header .userInfo .userInfoHeader {
+    gap: 1rem;
+  }
+  .header .userInfo .userInfoHeader a span {
+    font-size: 20px;
+  }
+  .header .userInfo .userInfoHeader a #icon:hover {
+    transform: scale(1.05);
+  }
+  .header .userInfo .logOut button {
+    padding: 0.6rem 1rem;
+    color: white;
+    background: rgb(34, 10, 46);
+    background: radial-gradient(circle at 10% 20%, rgb(85, 97, 97) 0%, rgb(0, 0, 0) 90%);
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header a h1 {
+    font-size: 22px;
+  }
+  .header .userInfo .userInfoHeader {
+    display: block;
+  }
+  .header .userInfo .logOut button {
+    display: none;
+  }
+  .header .userInfo .logOut #threeLines {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+  .header .userInfo .userInfoHeader {
+    display: none;
+  }
+  .header .userInfo .logOut button {
+    display: none;
+  }
+  .header .userInfo .logOut #threeLines {
+    display: block;
+  }
+}
+
+.active {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: red;
+  border-radius: 40px;
+}
+
+.headerPage {
+  min-height: 100vh;
+  z-index: 500;
+  width: 100%;
+  background-color: #1db954;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  padding: 0rem 1.8rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+}
+.headerPage .heads {
+  flex: 0.1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerPage .heads span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.headerPage .heads span:nth-child(1) {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.headerPage .navLinks {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.headerPage .navLinks a {
+  font-size: 2rem;
+  color: white;
+}
+.headerPage .navLinks a span {
+  font-size: 2rem;
+  color: white;
+}
+.headerPage .navLinks span {
+  font-size: 2rem;
+}/*# sourceMappingURL=Expanded.css.map */

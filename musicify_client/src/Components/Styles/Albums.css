@@ -1,0 +1,271 @@
+.library {
+  display: flex;
+  align-items: start;
+  flex: 0.8;
+  background: radial-gradient(circle at 10% 20%, rgb(69, 78, 78) 0%, rgb(34, 34, 34) 90%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem 1.2rem;
+  overflow: auto;
+  gap: 1.2rem;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 16px 10px;
+  padding-bottom: 6rem;
+}
+@media screen and (max-width: 800px) {
+  .library {
+    padding-bottom: 0rem;
+  }
+}
+.library .header1 {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.library .header1 h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1250px) {
+  .library .header1 h1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .library .header1 h1 {
+    font-size: 14px;
+  }
+}
+.library .header1 span {
+  font-size: 20px;
+  cursor: pointer;
+}
+.library .Albums {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.library .Albums .counts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: start;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 10px 6px;
+  background-color: #2e3036;
+  width: 110%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+@media screen and (max-width: 1024px) {
+  .library .Albums .counts {
+    padding: 0px;
+    gap: 0.6rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .library .Albums .counts {
+    padding: 0px;
+    gap: 0.2rem;
+  }
+}
+.library .Albums .counts img {
+  height: 4rem;
+  width: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .library .Albums .counts img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.library .Albums .counts .det {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.library .Albums .counts .det h4 {
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+}
+@media screen and (max-width: 1124) {
+  .library .Albums .counts .det h4 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .library .Albums .counts .det h4 {
+    font-size: 10px;
+  }
+}
+.library .Albums .counts .det span {
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+}
+@media screen and (max-width: 1124) {
+  .library .Albums .counts .det span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .library .Albums .counts .det span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .library #create span {
+    font-size: 12px;
+  }
+}
+.library .row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-top: 1px solid #dadada;
+  width: 100%;
+  padding: 1rem 0;
+  justify-content: center;
+  transition: all 600ms ease-in;
+  align-items: start;
+  color: white;
+}
+.library .row h1 {
+  font-size: 26px;
+}
+@media screen and (max-width: 1250px) {
+  .library .row h1 {
+    font-size: 20px;
+  }
+}
+.library .row .single {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 189%;
+  transition: all 300ms ease-in;
+  border-radius: 6px;
+}
+.library .row .single:hover {
+  background-color: #1a1a1b;
+}
+@media screen and (max-width: 1250px) {
+  .library .row .single {
+    gap: 0.5rem;
+  }
+}
+.library .row .single img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+@media screen and (max-width: 1250px) {
+  .library .row .single img {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .library .row .single img {
+    height: 40px;
+    width: 40px;
+  }
+}
+.library .row .single span {
+  text-wrap: wrap;
+  cursor: pointer;
+  font-size: 16px;
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .library .row .single span {
+    font-size: 8px;
+  }
+}
+.library .Artists {
+  display: flex;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+  transition: all 600ms ease-in;
+  padding: 0 8px;
+}
+.library .Artists .row1 {
+  display: flex;
+  gap: 0.8rem;
+  width: 150%;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 600ms ease-in;
+  align-items: start;
+  color: white;
+}
+.library .Artists .row1 h1 {
+  font-size: 26px;
+}
+.library .Artists .row1 .single1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 160%;
+  transition: all 300ms ease-in;
+  border-radius: 6px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .library .Artists .row1 .single1 {
+    gap: 0.4rem;
+  }
+}
+.library .Artists .row1 .single1:hover {
+  background-color: #222224;
+}
+.library .Artists .row1 .single1 img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .library .Artists .row1 .single1 img {
+    height: 60px;
+    width: 60px;
+  }
+}
+.library .Artists .row1 .single1 span {
+  text-wrap: wrap;
+  cursor: pointer;
+  font-size: 19px;
+  text-wrap: wrap;
+  width: 60%;
+  border-bottom: 1px solid transparent;
+}
+@media screen and (max-width: 1024px) {
+  .library .Artists .row1 .single1 span {
+    font-size: 12px;
+  }
+}
+.library .Artists .row1 .single1 span:hover {
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=Albums.css.map */

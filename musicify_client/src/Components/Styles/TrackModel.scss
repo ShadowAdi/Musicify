@@ -1,0 +1,44 @@
+.trackModal {
+  padding: 0.6rem;
+  position: absolute;
+  right: 300px;
+  top: 100px;
+  background-color: #1d1d1d;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+  gap: 1rem;
+  margin-bottom: 20px;
+  .spanRow {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    span {
+      font-weight: 500;
+      font-size: 17px;
+      width: 100%;
+      text-wrap: nowrap;
+    }
+  }
+}
+.hiddenArtist {
+  display: flex;
+  flex-direction: column;
+  right: -220px;
+  top: 60px;
+  background-color: #1d1d1d;
+  position: absolute;
+  gap: 0.4rem;
+  align-items: start;
+  padding: 0.6rem;
+  span {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-wrap: nowrap;
+    font-weight: 400;
+    z-index: 100;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,31 @@
+.LoginPage {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.LoginPage section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  flex-direction: column;
+  width: 100vw;
+}
+.LoginPage #page1 {
+  background-color: #1d1d1d;
+}
+.LoginPage #page1 h1 {
+  font-size: 12rem;
+}
+.LoginPage #page1 button {
+  padding: 1rem 6rem;
+  background-color: #1ed579;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 27px;
+  font-size: 24px;
+  font-weight: 600;
+}/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,118 @@
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  padding: 1rem 0.6rem;
+  width: 100vw;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.4rem;
+}
+@media screen and (max-width: 520px) {
+  footer {
+    justify-content: space-between;
+  }
+}
+footer .globalSongInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+@media screen and (max-width: 640px) {
+  footer .globalSongInfo {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .globalSongInfo {
+    gap: 0.1rem;
+  }
+}
+footer .globalSongInfo img {
+  height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+}
+@media screen and (max-width: 840px) {
+  footer .globalSongInfo img {
+    height: 50px;
+    width: 50px;
+  }
+}
+footer .globalSongInfo .currentSongInfoDesc {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+@media screen and (max-width: 840px) {
+  footer .globalSongInfo .currentSongInfoDesc {
+    gap: 0.2rem;
+  }
+}
+footer .globalSongInfo .currentSongInfoDesc span {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 840px) {
+  footer .globalSongInfo .currentSongInfoDesc span {
+    font-size: 14px;
+  }
+}
+footer .globalSongInfo .currentSongInfoDesc #artist {
+  font-size: 14px;
+  color: #dadada;
+  font-weight: 500;
+}
+@media screen and (max-width: 840px) {
+  footer .globalSongInfo .currentSongInfoDesc #artist {
+    font-size: 10px;
+  }
+}
+footer .Icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 520px) {
+  footer .Icons {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .Icons {
+    gap: 0.4rem;
+  }
+}
+footer .Icons #prevBtn {
+  color: white;
+  display: block;
+}
+footer .Icons .realIcon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+footer .Icons #seekSliderId {
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+  left: 0;
+  height: 2px;
+  background-color: red;
+}
+@media screen and (max-width: 640px) {
+  footer h1 {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=Footer.css.map */

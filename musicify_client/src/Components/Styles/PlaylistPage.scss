@@ -1,0 +1,355 @@
+.PlaylistPage {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  overflow-y: auto;
+  background: #1a1919;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+  gap: 2rem;
+  padding: 0rem;
+  overflow-x: hidden;
+  padding-bottom: 6rem;
+  @media screen and (max-width: 900px) {
+    flex: 0.9;
+    width: 100%;
+  }
+  @media screen and (max-width: 700px) {
+    flex: 1;
+    width: 100%;
+  }
+  .poster {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    .imgContainer {
+      height: 300px;
+      width: 40%;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transition: all 600ms ease-in;
+      cursor: pointer;
+      object-position: top;
+      @media screen and (max-width: 2024px) {
+        height: 280px;
+        width: 50%;
+      }
+      @media screen and (max-width: 1024px) {
+        height: 200px;
+        width: 50%;
+      }
+      @media screen and (max-width: 720px) {
+        height: 200px;
+        width: 90%;
+      }
+      @media screen and (max-width: 400px) {
+        height: 120px;
+        width: 90%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        transition: all 600ms ease-in;
+        object-fit: cover;
+      }
+      .chaneImage {
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        transition: all 1200ms ease-in;
+        background-color: #1d1d1d;
+        color: white;
+      }
+    }
+    .descImage {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      color: white;
+      gap: 0.6rem;
+      @media screen and (max-width: 1024px) {
+        gap: 0.2rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+        @media screen and (max-width: 1568px) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 1.6rem;
+        }
+        @media screen and (max-width: 720px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 0.6rem;
+        }
+      }
+      .artistNamesAutor {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        span {
+          font-size: 1.2rem;
+          color: white;
+          text-decoration: none;
+          @media screen and (max-width: 1024px) {
+            font-size: 0.8rem;
+          }
+          @media screen and (max-width: 720px) {
+            font-size: 0.6rem;
+          }
+        }
+      }
+      span {
+        font-size: 16px;
+        @media screen and (max-width: 1024px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 720px) {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  .songLists {
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    gap: 1rem;
+    .plays {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 96%;
+      margin: 2rem auto;
+      .lovers {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex: 0.9;
+        #playIcon {
+          cursor: pointer;
+          transition: all 600ms ease-in;
+          color: #dadada;
+
+          &:hover {
+            color: #1ed760;
+            transform: scale(1.1);
+          }
+          @media screen and (max-width: 1024px) {
+            font-size: 0.8rem;
+          }
+          @media screen and (max-width: 720px) {
+            font-size: 0.6rem;
+          }
+        }
+        span {
+          color: #dadada;
+          font-size: 18px;
+          @media screen and (max-width: 1024px) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: 420px) {
+            font-size: 10px;
+          }
+        }
+        #heartIcon {
+          cursor: pointer;
+          color: #dadada;
+          transition: all 600ms ease-in;
+          &:hover {
+            color: white;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    .follow {
+      flex: 0.1;
+      button {
+        outline: 0;
+        border: 0;
+        padding: 0.6rem 0.8rem;
+        border-radius: 6px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        position: relative;
+        font-weight: 500;
+        cursor: pointer;
+        @media screen and (max-width: 1024px) {
+          font-size: 14px;
+          padding: 0.4rem 0.3rem;
+        }
+      }
+    }
+    .tracks {
+      display: flex;
+      flex-direction: column;
+      width: 96%;
+      margin: 0 auto;
+      padding-bottom: 6rem;
+
+      .headings {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // background-color: red;
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #807b76;
+        color: #dadada;
+
+        .nos {
+          flex: 0.1;
+          // background-color: #1ed760;
+          display: flex;
+          justify-content: center;
+        }
+        .names {
+          flex: 0.8;
+          // background-color: #d7c41e;
+          display: flex;
+          justify-content: start;
+        }
+        .times {
+          flex: 0.1;
+          // background-color: #d71ed7;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .songNames {
+        width: 100%;
+        padding-top: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        width: 100%;
+        padding-bottom: 8px;
+        transition: all 300ms ease-in;
+        color: #dadada;
+        &:hover {
+          background-color: rgb(96, 93, 93);
+        }
+
+        .songCount {
+          flex: 0.1;
+          // background-color: #1ed760;
+          display: flex;
+          justify-content: center;
+        }
+        .songName {
+          flex: 0.8;
+          // background-color: #d7c41e;
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          display: flex;
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.2rem;
+          width: 100%;
+          padding-right: 6rem;
+          // background-color: red;
+          .showing {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img {
+              height: 100%;
+              width: 80px;
+              object-fit: cover;
+              @media screen and (max-width: 420px) {
+                width: 40px;
+              }
+            }
+
+            .artist_Song {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              h4 {
+                font-size: 20px;
+                cursor: pointer;
+                color: #fff;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                  border-bottom: 1px solid white;
+                }
+                @media screen and (max-width: 720px) {
+                  font-size: 16px;
+                }
+                @media screen and (max-width: 320px) {
+                  font-size: 10px;
+                }
+              }
+              .artistName {
+                color: #fff;
+
+                span {
+                  cursor: pointer;
+                  opacity: 0.8;
+                  border-bottom: 1px solid transparent;
+                  font-size: 15px;
+                  font-weight: 400;
+
+                  &:hover {
+                    opacity: 1;
+                    border-bottom: 1px solid white;
+                  }
+                  @media screen and (max-width: 720px) {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+          .hidden {
+            display: flex;
+            align-items: center;
+            opacity: 1;
+            position: relative;
+            gap: 1rem;
+            cursor: pointer;
+            @media screen and (max-width: 720px) {
+              display: none;
+            }
+          }
+        }
+        .songDuration {
+          flex: 0.1;
+          // background-color: #d71ed7;
+          display: flex;
+          justify-content: center;
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            @media screen and (max-width: 720px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

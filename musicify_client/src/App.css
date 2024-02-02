@@ -1,0 +1,46 @@
+* {
+  /* cursor: none; */
+}
+.cursor {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  z-index: 500;
+background-color: #1ed564;
+z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.6ms ease-in-out;
+  color: white;
+  overflow: hidden;
+}
+.loaderDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 280px;
+}
+.slide-in {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  background: #0f0f0f;
+  z-index: 300;
+  transform-origin: bottom;
+}
+.slide-Out {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  z-index: 200;
+  background: #0f0f0f;
+  transform-origin: top;
+}
